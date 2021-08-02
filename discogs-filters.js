@@ -2,7 +2,10 @@
 // @name           Discogs Filters
 // @namespace      discogs.com
 // @description    Filters marketplace items Rating, Wanted & Rarity
+// @author         slavanossar
 // @version        1.0
+// @updateURL      https://raw.githubusercontent.com/slavanossar/userscripts/main/discogs-filters.js
+// @downloadURL    https://raw.githubusercontent.com/slavanossar/userscripts/main/discogs-filters.js
 // @include        https://www.discogs.com/seller/*/profile*
 // @include        https://www.discogs.com/sell/list*
 // @grant          none
