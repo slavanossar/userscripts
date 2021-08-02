@@ -3,7 +3,7 @@
 // @namespace      discogs.com
 // @description    Filters marketplace items Rating, Wanted & Rarity
 // @author         slavanossar
-// @version        1.0
+// @version        1.01
 // @updateURL      https://raw.githubusercontent.com/slavanossar/userscripts/main/discogs-filters.js
 // @downloadURL    https://raw.githubusercontent.com/slavanossar/userscripts/main/discogs-filters.js
 // @include        https://www.discogs.com/seller/*/profile*
@@ -150,10 +150,12 @@ function inputHandler() {
       hidden = true
     }
 
-    el.style.opacity = hidden ? '0.25' : null
-    el.style.filter = hidden ? 'grayscale(1)' : null
-    el.style.pointerEvents = hidden ? 'none' : null
-    el.style.userSelect = hidden ? 'none' : null
+    styleHelper(el, {
+      opacity: hidden ? '0.25' : null,
+      filter: hidden ? 'grayscale(1)' : null,
+      pointerEvents: hidden ? 'none' : null,
+      userSelect: hidden ? 'none' : null
+    })
   })
 
   allButton.textContent = filterByRating && filterByWanted && filterByRare
